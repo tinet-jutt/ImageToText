@@ -1,8 +1,10 @@
 {
   "name": "image-to-text",
   "displayName": "ImageToText",
-  "description": "",
+  "description": "基于baidu OCR二次封装识别并提取图片中的文字的小工具",
   "version": "0.0.1",
+  "icon": "asserts/icon.png",
+  "publisher": "tomatoKnightJ",
   "engines": {
     "vscode": "^1.56.0"
   },
@@ -27,9 +29,9 @@
     ],
     "keybindings": [
       {
-          "command": "img-to-text.show",
-          "key": "alt+shift+o",
-          "mac": "alt+shift+o"
+        "command": "img-to-text.show",
+        "key": "alt+shift+o",
+        "mac": "alt+shift+o"
       }
     ],
     "configuration": {
@@ -93,7 +95,6 @@
     "clipboardy": "^2.3.0",
     "form-data": "^4.0.0",
     "got": "^11.8.2",
-    "ng-pathfinder": "^0.0.3",
     "vscode-nls": "^5.0.0"
   }
 }

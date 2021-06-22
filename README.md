@@ -23,7 +23,7 @@
 
 ## 发布历史
 
-### 1.0.0
+### 0.0.1
 
 * 初版发布
 
@@ -31,8 +31,10 @@
 
 ## 其他
 
-* [GitHub](https://code.visualstudio.com/api/references/extension-guidelines)
+* [GitHub](https://github.com/tinet-jutt/ImageToText)
 
 * [VSCode Market](http://code.visualstudio.com/docs/languages/markdown)
+
+* Icons made by [Good Ware](https://www.flaticon.com/authors/good-ware) from [www.flaticon.com](https://www.flaticon.com/)
 
 **Enjoy!**
