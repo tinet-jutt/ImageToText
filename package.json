@@ -1,0 +1,99 @@
+{
+  "name": "image-to-text",
+  "displayName": "ImageToText",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.56.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:img-to-text.show",
+    "onCommand:img-to-text.config"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "img-to-text.show",
+        "title": "Image To Text"
+      },
+      {
+        "command": "img-to-text.config",
+        "title": "Image To Text Config"
+      }
+    ],
+    "keybindings": [
+      {
+          "command": "img-to-text.show",
+          "key": "alt+shift+o",
+          "mac": "alt+shift+o"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "%img-to-text.title%",
+      "properties": {
+        "Img-to-text.model": {
+          "type": "string",
+          "enum": [
+            "通用文字识别（标准版）",
+            "通用文字识别（高精度版）",
+            "数字识别"
+          ],
+          "default": "通用文字识别（标准版）",
+          "description": "OCR识别模式选择(仅支持默认版，其他版本需自己创建应用填入对应的API Key和Secret Key)"
+        },
+        "Img-to-text.client_id": {
+          "type": "string",
+          "description": "应用的API Key"
+        },
+        "Img-to-text.client_secret": {
+          "type": "string",
+          "description": "应用的Secret Key"
+        },
+        "Img-to-text.show_result": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否展示结果"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "test-compile": "tsc -p ./",
+    "test-watch": "tsc -watch -p ./",
+    "pretest": "npm run test-compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.3",
+    "@types/mocha": "^8.0.4",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.56.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "eslint": "^7.19.0",
+    "glob": "^7.1.6",
+    "mocha": "^8.2.1",
+    "ts-loader": "^8.0.14",
+    "typescript": "~4.0.0",
+    "vscode-test": "^1.5.0",
+    "webpack": "^5.19.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "clipboardy": "^2.3.0",
+    "form-data": "^4.0.0",
+    "got": "^11.8.2",
+    "ng-pathfinder": "^0.0.3",
+    "vscode-nls": "^5.0.0"
+  }
+}
