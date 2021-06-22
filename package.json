@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "icon": "asserts/icon.png",
   "publisher": "tomatoKnightJ",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.56.0"
   },
@@ -16,6 +17,7 @@
     "onCommand:img-to-text.config"
   ],
   "main": "./dist/extension.js",
+  "repository": "https://github.com/tinet-jutt/ImageToText",
   "contributes": {
     "commands": [
       {

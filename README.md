@@ -7,7 +7,7 @@
 1. 复制图片文件或截图,使用alt+shift+o快捷键
 2. 提取到的文字会自动复制到剪切板
 ## 演示
-![演示](/asserts/play.gif)
+![演示](https://github.com/tinet-jutt/ImageToText/blob/master/asserts/play.gif?raw=true)
 
 ## 注意事项
 
@@ -32,9 +32,7 @@
 ## 其他
 
 * [GitHub](https://github.com/tinet-jutt/ImageToText)
-
-* [VSCode Market](http://code.visualstudio.com/docs/languages/markdown)
-
+* [VSCode Market](https://marketplace.visualstudio.com/items?itemName=tomatoknightJ.image-to-text)
 * Icons made by [Good Ware](https://www.flaticon.com/authors/good-ware) from [www.flaticon.com](https://www.flaticon.com/)
 
 **Enjoy!**
