@@ -15,12 +15,6 @@ export function activate(context: vscode.ExtensionContext) {
 		const {client_id, client_secret, show_result} = config;		
 		const close = utils.showProgress($l['loading']);
 		try {
-			let path1 = utils.getCurrentFilePath();
-			console.log('path1-------', path1);
-			
-			let path2 = utils.getCurrentRoot();
-			console.log('path2-------', path2);
-
 			let savePath = utils.getTmpFolder();
 			savePath = path.join(savePath, `img_${+new Date()}.png`);
 			const imageList = await utils.getPasteImage(savePath);	
