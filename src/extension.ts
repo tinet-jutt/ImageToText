@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
-import * as clipboardy from 'clipboardy';
 import * as os from 'os';
 import utils,{ locale as $l } from './lib/utils';
 import ocr from './lib/ocr';
