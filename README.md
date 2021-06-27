@@ -7,7 +7,7 @@
 1. 复制图片文件或截图,使用alt+shift+o快捷键
 2. 提取到的文字会自动复制到剪切板
 ## 演示
-![演示](https://github.com/tinet-jutt/ImageToText/blob/master/asserts/play.gif?raw=true)
+![演示](https://p5.toutiaoimg.com/origin/pgc-image/d7a042b949a04353806ae57881fa552c#.gif)
 
 ## 注意事项
 

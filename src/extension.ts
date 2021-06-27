@@ -6,15 +6,14 @@ import * as os from 'os';
 import utils,{ locale as $l } from './lib/utils';
 import ocr from './lib/ocr';
 
-
 export function activate(context: vscode.ExtensionContext) {
 	
 	console.info('Congratulations, your extension "image-to-text" is now active!');
-	let disposable = vscode.commands.registerCommand('img-to-text.show', async () => {
-		let config: any = utils.getConfig();
-		const {client_id, client_secret, show_result} = config;		
+	let disposable = vscode.commands.registerCommand('img-to-text.show', async () => {	
 		const close = utils.showProgress($l['loading']);
 		try {
+			let config: any = utils.getConfig();
+			const {client_id, client_secret, show_result} = config;	
 			let savePath = utils.getTmpFolder();
 			savePath = path.join(savePath, `img_${+new Date()}.png`);
 			const imageList = await utils.getPasteImage(savePath);	
@@ -32,8 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 			const base64str = Buffer.from(bitmap).toString('base64');
 			const content = await ocr.postImgToOCR(url, base64str);
 			const words = ([''].concat(content.words_result.map((word: any) => word.words))).join(os.EOL);
-			// 写入剪切板
-			clipboardy.writeSync(words);
+			vscode.env.clipboard.writeText(words);
 			if (show_result) {
 				const panel: any = vscode.window.createWebviewPanel(
 					'imagetotext', 
