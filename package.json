@@ -2,8 +2,8 @@
   "name": "image-to-text",
   "displayName": "ImageToText",
   "description": "基于baidu OCR二次封装识别并提取图片中的文字的小工具",
-  "version": "0.0.1",
-  "icon": "https://p6.toutiaoimg.com/origin/pgc-image/834c21faff0c4205bb44045d64755e90.png",
+  "version": "0.1.2",
+  "icon": "asserts/icon.png",
   "publisher": "tomatoKnightJ",
   "license": "MIT",
   "engines": {
