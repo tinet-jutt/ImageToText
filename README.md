@@ -36,3 +36,7 @@
 * Icons made by [Good Ware](https://www.flaticon.com/authors/good-ware) from [www.flaticon.com](https://www.flaticon.com/)
 
 **Enjoy!**
+
+[![Stargazers repo roster for @tinet-jutt/ImageToText](https://reporoster.com/stars/tinet-jutt/ImageToText)](https://github.com/tinet-jutt/ImageToText/stargazers)
+
+[![Forkers repo roster for @tinet-jutt/ImageToText](https://reporoster.com/forks/tinet-jutt/ImageToText)](https://github.com/tinet-jutt/ImageToText/network/members)
